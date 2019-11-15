@@ -4,6 +4,7 @@
   "description": "Back End App for Konseling ID",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon --exec babel-node ./api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,31 @@
   "bugs": {
     "url": "https://github.com/vincentkdeli/kid-backend/issues"
   },
-  "homepage": "https://github.com/vincentkdeli/kid-backend#readme"
+  "homepage": "https://github.com/vincentkdeli/kid-backend#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "path": "^0.12.7",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.19.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "@babel/runtime": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
 }
